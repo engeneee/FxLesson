@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -17,9 +18,20 @@
             </InnerShadow>
          </effect>
       </Button>
-      <TextField fx:id="emailTextField" layoutX="163.0" layoutY="93.0" prefHeight="26.0" prefWidth="287.0" promptText="Enter your email" />
-      <TextField fx:id="passwordTextField" layoutX="163.0" layoutY="173.0" prefHeight="26.0" prefWidth="287.0" promptText="Enter your password" />
-      <TextField fx:id="repeatpasswordTextField" layoutX="163.0" layoutY="213.0" prefHeight="26.0" prefWidth="287.0" promptText="Repeat password" />
-      <TextField fx:id="phoneTextField" layoutX="163.0" layoutY="132.0" prefHeight="26.0" prefWidth="287.0" promptText="Enter your phone number" />
+      <TextField fx:id="emailTextField" layoutX="163.0" layoutY="49.0" prefHeight="26.0" prefWidth="287.0" promptText="Enter your email" />
+      <TextField fx:id="passwordTextField" layoutX="163.0" layoutY="131.0" prefHeight="26.0" prefWidth="287.0" promptText="Enter your password" />
+      <TextField fx:id="repeatpasswordTextField" layoutX="163.0" layoutY="173.0" prefHeight="26.0" prefWidth="287.0" promptText="Repeat password" />
+      <TextField fx:id="phoneTextField" layoutX="163.0" layoutY="90.0" prefHeight="26.0" prefWidth="287.0" promptText="Enter your phone number" />
+      <Button fx:id="cancelButton" accessibleText="Clicked" layoutX="188.0" layoutY="340.0" mnemonicParsing="false" onAction="#registrationButtonClicked" prefHeight="26.0" prefWidth="238.0" text="Cancel" wrapText="true">
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color green="1.0" blue="0.10000000149011612" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <ComboBox fx:id="combogroup" layoutX="163.0" layoutY="252.0" prefHeight="26.0" prefWidth="287.0" promptText="3Е" />
+      <ComboBox fx:id="comboclass" layoutX="163.0" layoutY="213.0" prefHeight="26.0" prefWidth="287.0" promptText="202" />
    </children>
 </AnchorPane>
